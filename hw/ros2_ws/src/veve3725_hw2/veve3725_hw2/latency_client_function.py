@@ -63,9 +63,10 @@ def main():
         os.makedirs(os.path.dirname(args.png), exist_ok=True)
         plt.figure()
         plt.hist(xs, bins=30)
+        plt.xlim(0.0, 0.03)
         plt.title('Service transfer latency')
         plt.xlabel('seconds')
-        plt.ylabel('count')
+        plt.ylabel('count/frequency')
         plt.savefig(args.png, dpi=150, bbox_inches='tight')
     except Exception as e:
         print('Plot skipped:', e)
