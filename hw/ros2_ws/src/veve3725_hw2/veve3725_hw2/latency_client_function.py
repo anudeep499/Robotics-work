@@ -70,7 +70,7 @@ def main():
         plt.savefig(args.png, dpi=200, bbox_inches='tight')
     except Exception as e:
         print('Plot skipped:', e)
-
+    
     xs = [s[2] for s in samples]
     print(f"Wrote {len(samples)} rows to {args.out}")
     print(

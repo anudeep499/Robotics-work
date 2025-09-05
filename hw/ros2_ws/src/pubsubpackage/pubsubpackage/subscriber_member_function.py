@@ -16,7 +16,7 @@ class LatencySubscriber(Node):
     def timer_function(self, msg: Header):
         previous_time = Time.from_msg(msg.stamp)
         present_time = self.get_clock().now()
-        latency = (present_time - previous_time)
+        latency = (present_time - previous_time).nanoseconds / 1e9
         self.samples.append(latency)
         if len(self.samples) >= self.count:
             self.excel_finishing()
@@ -33,7 +33,7 @@ class LatencySubscriber(Node):
             os.makedirs(os.path.dirname(self.png) or '.', exist_ok=True)
             plt.figure()
             plt.hist(self.samples, bins=30)
-            plt.xlim(0.0, 0.030)
+            plt.xlim(0.0, 0.03)
             plt.title('Subscriber Information Latency')
             plt.xlabel('seconds'); plt.ylabel('frequency/number of times')
             plt.savefig(self.png, dpi=250, bbox_inches='tight')
