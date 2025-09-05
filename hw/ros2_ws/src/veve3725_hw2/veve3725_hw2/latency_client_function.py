@@ -67,7 +67,7 @@ def main():
         plt.title('Service transfer latency')
         plt.xlabel('seconds')
         plt.ylabel('count/frequency')
-        plt.savefig(args.png, dpi=150, bbox_inches='tight')
+        plt.savefig(args.png, dpi=200, bbox_inches='tight')
     except Exception as e:
         print('Plot skipped:', e)
 

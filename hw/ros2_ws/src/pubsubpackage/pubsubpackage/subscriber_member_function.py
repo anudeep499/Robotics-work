@@ -36,7 +36,7 @@ class LatencySubscriber(Node):
             plt.xlim(0.0, 0.030)
             plt.title('Subscriber Information Latency')
             plt.xlabel('seconds'); plt.ylabel('frequency/number of times')
-            plt.savefig(self.png, dpi=150, bbox_inches='tight')
+            plt.savefig(self.png, dpi=250, bbox_inches='tight')
         except Exception as e:
             self.get_logger().warn(f'Plot skipped: {e}')
         self.get_logger().info(f'Collected {len(self.samples)} samples: {self.png}')
