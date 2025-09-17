@@ -1,0 +1,5 @@
+[console_scripts]
+client_function = veve3725_hw2.client_function:main
+latency_client_function = veve3725_hw2.latency_client_function:main
+server_function = veve3725_hw2.server_function:main
+

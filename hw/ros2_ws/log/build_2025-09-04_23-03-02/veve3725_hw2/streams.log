@@ -1,0 +1,26 @@
+[1.617s] Invoking command in '/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2': PYTHONPATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2/build --no-deps symlink_data
+[1.993s] running develop
+[2.192s] running egg_info
+[2.192s] creating veve3725_hw2.egg-info
+[2.192s] writing veve3725_hw2.egg-info/PKG-INFO
+[2.192s] writing dependency_links to veve3725_hw2.egg-info/dependency_links.txt
+[2.192s] writing entry points to veve3725_hw2.egg-info/entry_points.txt
+[2.193s] writing requirements to veve3725_hw2.egg-info/requires.txt
+[2.193s] writing top-level names to veve3725_hw2.egg-info/top_level.txt
+[2.194s] writing manifest file 'veve3725_hw2.egg-info/SOURCES.txt'
+[2.196s] reading manifest file 'veve3725_hw2.egg-info/SOURCES.txt'
+[2.197s] writing manifest file 'veve3725_hw2.egg-info/SOURCES.txt'
+[2.198s] running build_ext
+[2.199s] Creating /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/lib/python3.10/site-packages/veve3725-hw2.egg-link (link to .)
+[2.200s] Installing client_function script to /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/lib/veve3725_hw2
+[2.201s] Installing latency_client_function script to /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/lib/veve3725_hw2
+[2.201s] Installing server_function script to /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/lib/veve3725_hw2
+[2.202s] 
+[2.202s] Installed /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2
+[2.202s] running symlink_data
+[2.202s] creating /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/share/ament_index
+[2.202s] creating /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/share/ament_index/resource_index
+[2.202s] creating /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/share/ament_index/resource_index/packages
+[2.202s] symbolically linking /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2/resource/veve3725_hw2 -> /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/share/ament_index/resource_index/packages
+[2.202s] symbolically linking /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2/package.xml -> /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/share/veve3725_hw2
+[2.259s] Invoked command in '/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2' returned '0': PYTHONPATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2/build --no-deps symlink_data

@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4357d913a23ee52ee2ef.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "veve3725_service__py",
+					"jsonFile" : "directory-veve3725_service__py-82211f12b711431d7cf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service/veve3725_service__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "veve3725_service",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_veve3725_service_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_veve3725_service_egg-9d22d1aa8d388579d91f.json",
+					"name" : "ament_cmake_python_build_veve3725_service_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_veve3725_service::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_veve3725_service-b4dfa04d97a6f9235e60.json",
+					"name" : "ament_cmake_python_symlink_veve3725_service",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b25f64d66cbc277b0d0a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service-0b97a6bab22e6cf5843a.json",
+					"name" : "veve3725_service",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__cpp-8ed76492d007be545085.json",
+					"name" : "veve3725_service__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "veve3725_service__py::@7b6a1567c558a158be6c",
+					"jsonFile" : "target-veve3725_service__py-f907e9862f873dadd71a.json",
+					"name" : "veve3725_service__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_generator_c-76922d1625751e29896a.json",
+					"name" : "veve3725_service__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_generator_py-680039fcfbcfa28638a5.json",
+					"name" : "veve3725_service__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_c-820d80d8a28917aeabca.json",
+					"name" : "veve3725_service__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_c__pyext-ee7b2317125b4446b50a.json",
+					"name" : "veve3725_service__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_cpp-52d1a8e22649eb224738.json",
+					"name" : "veve3725_service__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_fastrtps_c-34ddaddbd75f469c9e68.json",
+					"name" : "veve3725_service__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_fastrtps_c__pyext-a6a3b5550481434da847.json",
+					"name" : "veve3725_service__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_fastrtps_cpp-d2ff4b951aa9b6d5d608.json",
+					"name" : "veve3725_service__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_introspection_c-ad1fa498545627e5621d.json",
+					"name" : "veve3725_service__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_introspection_c__pyext-ee138fc4a3546db74cdf.json",
+					"name" : "veve3725_service__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service__rosidl_typesupport_introspection_cpp-55b8a77b51ee826d694c.json",
+					"name" : "veve3725_service__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "veve3725_service_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-veve3725_service_uninstall-2c10590101f4e4947cef.json",
+					"name" : "veve3725_service_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service",
+		"source" : "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/veve3725_service"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

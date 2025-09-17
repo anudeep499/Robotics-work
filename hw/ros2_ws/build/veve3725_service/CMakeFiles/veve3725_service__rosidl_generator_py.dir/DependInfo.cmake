@@ -1,0 +1,21 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service/rosidl_generator_py/veve3725_service/srv/_veve3725_service_s.c" "CMakeFiles/veve3725_service__rosidl_generator_py.dir/rosidl_generator_py/veve3725_service/srv/_veve3725_service_s.c.o" "gcc" "CMakeFiles/veve3725_service__rosidl_generator_py.dir/rosidl_generator_py/veve3725_service/srv/_veve3725_service_s.c.o.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service/CMakeFiles/veve3725_service__rosidl_typesupport_c.dir/DependInfo.cmake"
+  "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service/CMakeFiles/veve3725_service__rosidl_generator_c.dir/DependInfo.cmake"
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

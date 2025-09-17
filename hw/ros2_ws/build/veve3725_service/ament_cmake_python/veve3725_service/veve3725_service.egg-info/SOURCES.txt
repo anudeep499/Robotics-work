@@ -1,0 +1,6 @@
+setup.py
+veve3725_service/__init__.py
+veve3725_service.egg-info/PKG-INFO
+veve3725_service.egg-info/SOURCES.txt
+veve3725_service.egg-info/dependency_links.txt
+veve3725_service.egg-info/top_level.txt
