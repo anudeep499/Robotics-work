@@ -1,4 +1,0 @@
-[console_scripts]
-publisher_member_function = pubsubpackage.publisher_member_function:main
-subscriber_member_function = pubsubpackage.subscriber_member_function:main
-

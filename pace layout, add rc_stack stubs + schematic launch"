@@ -1,0 +1,1394 @@
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/colcon_build.rc b/hw/ros2_ws/build/pubsubpackage/colcon_build.rc[m
+[1mdeleted file mode 100644[m
+[1mindex 573541a..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/colcon_build.rc[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-0[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/colcon_command_prefix_setup_py.sh b/hw/ros2_ws/build/pubsubpackage/colcon_command_prefix_setup_py.sh[m
+[1mdeleted file mode 100644[m
+[1mindex f9867d5..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/colcon_command_prefix_setup_py.sh[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-# generated from colcon_core/shell/template/command_prefix.sh.em[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/colcon_command_prefix_setup_py.sh.env b/hw/ros2_ws/build/pubsubpackage/colcon_command_prefix_setup_py.sh.env[m
+[1mdeleted file mode 100644[m
+[1mindex 4434a8f..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/colcon_command_prefix_setup_py.sh.env[m
+[1m+++ /dev/null[m
+[36m@@ -1,67 +0,0 @@[m
+[31m-AMENT_PREFIX_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service:/opt/ros/humble[m
+[31m-CHROME_DESKTOP=code.desktop[m
+[31m-CMAKE_PREFIX_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service[m
+[31m-COLCON=1[m
+[31m-COLCON_PREFIX_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install[m
+[31m-COLORTERM=truecolor[m
+[31m-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus[m
+[31m-DESKTOP_SESSION=ubuntu[m
+[31m-DISPLAY=:0[m
+[31m-GDK_BACKEND=x11[m
+[31m-GDMSESSION=ubuntu[m
+[31m-GIT_ASKPASS=/usr/share/code/resources/app/extensions/git/dist/askpass.sh[m
+[31m-GNOME_DESKTOP_SESSION_ID=this-is-deprecated[m
+[31m-GNOME_SETUP_DISPLAY=:1[m
+[31m-GNOME_SHELL_SESSION_MODE=ubuntu[m
+[31m-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/ee475d7a_ef55_40ca_bc67_997914002ade[m
+[31m-GNOME_TERMINAL_SERVICE=:1.273[m
+[31m-GTK_MODULES=gail:atk-bridge[m
+[31m-HOME=/home/anudeep[m
+[31m-IM_CONFIG_PHASE=1[m
+[31m-LANG=en_US.UTF-8[m
+[31m-LC_ALL=en_US.UTF-8[m
+[31m-LD_LIBRARY_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib[m
+[31m-LESSCLOSE=/usr/bin/lesspipe %s %s[m
+[31m-LESSOPEN=| /usr/bin/lesspipe %s[m
+[31m-LOGNAME=anudeep[m
+[31m-LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:[m
+[31m-OLDPWD=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws[m
+[31m-ORIGINAL_XDG_CURRENT_DESKTOP=ubuntu:GNOME[m
+[31m-PATH=/opt/ros/humble/bin:/home/anudeep/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+[31m-PWD=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/pubsubpackage[m
+[31m-PYTHONPATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2/lib/python3.10/site-packages:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/pubsubpackage:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/pubsubpackage/lib/python3.10/site-packages[m
+[31m-QT_ACCESSIBILITY=1[m
+[31m-QT_IM_MODULE=ibus[m
+[31m-ROS_DISTRO=humble[m
+[31m-ROS_LOCALHOST_ONLY=0[m
+[31m-ROS_PYTHON_VERSION=3[m
+[31m-ROS_VERSION=2[m
+[31m-SESSION_MANAGER=local/anudeep-VirtualBox:@/tmp/.ICE-unix/1530,unix/anudeep-VirtualBox:/tmp/.ICE-unix/1530[m
+[31m-SHELL=/bin/bash[m
+[31m-SHLVL=2[m
+[31m-SSH_AGENT_LAUNCHER=gnome-keyring[m
+[31m-SSH_AUTH_SOCK=/run/user/1000/keyring/ssh[m
+[31m-SYSTEMD_EXEC_PID=1559[m
+[31m-TERM=xterm-256color[m
+[31m-TERM_PROGRAM=vscode[m
+[31m-TERM_PROGRAM_VERSION=1.103.2[m
+[31m-USER=anudeep[m
+[31m-USERNAME=anudeep[m
+[31m-VSCODE_GIT_ASKPASS_EXTRA_ARGS=[m
+[31m-VSCODE_GIT_ASKPASS_MAIN=/usr/share/code/resources/app/extensions/git/dist/askpass-main.js[m
+[31m-VSCODE_GIT_ASKPASS_NODE=/usr/share/code/code[m
+[31m-VSCODE_GIT_IPC_HANDLE=/run/user/1000/vscode-git-d9e7b93c25.sock[m
+[31m-VTE_VERSION=6800[m
+[31m-WAYLAND_DISPLAY=wayland-0[m
+[31m-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.GC52B3[m
+[31m-XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg[m
+[31m-XDG_CURRENT_DESKTOP=Unity[m
+[31m-XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop[m
+[31m-XDG_MENU_PREFIX=gnome-[m
+[31m-XDG_RUNTIME_DIR=/run/user/1000[m
+[31m-XDG_SESSION_CLASS=user[m
+[31m-XDG_SESSION_DESKTOP=ubuntu[m
+[31m-XDG_SESSION_TYPE=wayland[m
+[31m-XMODIFIERS=@im=ibus[m
+[31m-_=/usr/bin/colcon[m
+[31m-_colcon_cd_root=/opt/ros/humble/[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/package.xml b/hw/ros2_ws/build/pubsubpackage/package.xml[m
+[1mdeleted file mode 120000[m
+[1mindex 226551c..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/package.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/pubsubpackage/package.xml[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/prefix_override/__pycache__/sitecustomize.cpython-310.pyc b/hw/ros2_ws/build/pubsubpackage/prefix_override/__pycache__/sitecustomize.cpython-310.pyc[m
+[1mdeleted file mode 100644[m
+[1mindex aafed99..0000000[m
+Binary files a/hw/ros2_ws/build/pubsubpackage/prefix_override/__pycache__/sitecustomize.cpython-310.pyc and /dev/null differ
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/prefix_override/sitecustomize.py b/hw/ros2_ws/build/pubsubpackage/prefix_override/sitecustomize.py[m
+[1mdeleted file mode 100644[m
+[1mindex 3fdf870..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/prefix_override/sitecustomize.py[m
+[1m+++ /dev/null[m
+[36m@@ -1,4 +0,0 @@[m
+[31m-import sys[m
+[31m-if sys.prefix == '/usr':[m
+[31m-    sys.real_prefix = sys.prefix[m
+[31m-    sys.prefix = sys.exec_prefix = '/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/pubsubpackage'[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage b/hw/ros2_ws/build/pubsubpackage/pubsubpackage[m
+[1mdeleted file mode 120000[m
+[1mindex 844a70e..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/pubsubpackage/pubsubpackage[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/PKG-INFO b/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/PKG-INFO[m
+[1mdeleted file mode 100644[m
+[1mindex 78d0ea7..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/PKG-INFO[m
+[1m+++ /dev/null[m
+[36m@@ -1,12 +0,0 @@[m
+[31m-Metadata-Version: 2.1[m
+[31m-Name: pubsubpackage[m
+[31m-Version: 0.0.0[m
+[31m-Summary: Advanced Robotics - Homework[m
+[31m-Home-page: UNKNOWN[m
+[31m-Maintainer: anudeep[m
+[31m-Maintainer-email: vedantamanudeep1@gmail.com[m
+[31m-License: Apache-2.0[m
+[31m-Platform: UNKNOWN[m
+[31m-[m
+[31m-UNKNOWN[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/SOURCES.txt b/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/SOURCES.txt[m
+[1mdeleted file mode 100644[m
+[1mindex c361cf9..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/SOURCES.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1,14 +0,0 @@[m
+[31m-package.xml[m
+[31m-setup.cfg[m
+[31m-setup.py[m
+[31m-pubsubpackage/__init__.py[m
+[31m-pubsubpackage/publisher_member_function.py[m
+[31m-pubsubpackage/subscriber_member_function.py[m
+[31m-pubsubpackage.egg-info/PKG-INFO[m
+[31m-pubsubpackage.egg-info/SOURCES.txt[m
+[31m-pubsubpackage.egg-info/dependency_links.txt[m
+[31m-pubsubpackage.egg-info/entry_points.txt[m
+[31m-pubsubpackage.egg-info/requires.txt[m
+[31m-pubsubpackage.egg-info/top_level.txt[m
+[31m-pubsubpackage.egg-info/zip-safe[m
+[31m-resource/pubsubpackage[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/dependency_links.txt b/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/dependency_links.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 8b13789..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/dependency_links.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/entry_points.txt b/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/entry_points.txt[m
+[1mdeleted file mode 100644[m
+[1mindex fa00fbd..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/entry_points.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1,4 +0,0 @@[m
+[31m-[console_scripts][m
+[31m-publisher_member_function = pubsubpackage.publisher_member_function:main[m
+[31m-subscriber_member_function = pubsubpackage.subscriber_member_function:main[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/requires.txt b/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/requires.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 49fe098..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/requires.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-setuptools[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/top_level.txt b/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/top_level.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 72e1a41..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/top_level.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-pubsubpackage[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/zip-safe b/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/zip-safe[m
+[1mdeleted file mode 100644[m
+[1mindex 8b13789..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/pubsubpackage.egg-info/zip-safe[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/resource/pubsubpackage b/hw/ros2_ws/build/pubsubpackage/resource/pubsubpackage[m
+[1mdeleted file mode 120000[m
+[1mindex ea387b9..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/resource/pubsubpackage[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/pubsubpackage/resource/pubsubpackage[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/setup.cfg b/hw/ros2_ws/build/pubsubpackage/setup.cfg[m
+[1mdeleted file mode 120000[m
+[1mindex 37d1f88..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/setup.cfg[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/pubsubpackage/setup.cfg[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/setup.py b/hw/ros2_ws/build/pubsubpackage/setup.py[m
+[1mdeleted file mode 120000[m
+[1mindex 2850b60..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/setup.py[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/pubsubpackage/setup.py[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.dsv b/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.dsv[m
+[1mdeleted file mode 100644[m
+[1mindex bb7b46c..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.dsv[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-prepend-non-duplicate;PYTHONPATH;/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/pubsubpackage[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.ps1 b/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.ps1[m
+[1mdeleted file mode 100644[m
+[1mindex 0896252..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.ps1[m
+[1m+++ /dev/null[m
+[36m@@ -1,3 +0,0 @@[m
+[31m-# generated from colcon_powershell/shell/template/hook_prepend_value.ps1.em[m
+[31m-[m
+[31m-colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX\/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/pubsubpackage"[m
+[1mdiff --git a/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.sh b/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.sh[m
+[1mdeleted file mode 100644[m
+[1mindex 0627367..0000000[m
+[1m--- a/hw/ros2_ws/build/pubsubpackage/share/pubsubpackage/hook/pythonpath_develop.sh[m
+[1m+++ /dev/null[m
+[36m@@ -1,3 +0,0 @@[m
+[31m-# generated from colcon_core/shell/template/hook_prepend_value.sh.em[m
+[31m-[m
+[31m-_colcon_prepend_unique_value PYTHONPATH "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/pubsubpackage"[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/colcon_build.rc b/hw/ros2_ws/build/veve3725_hw2/colcon_build.rc[m
+[1mdeleted file mode 100644[m
+[1mindex 573541a..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/colcon_build.rc[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-0[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/colcon_command_prefix_setup_py.sh b/hw/ros2_ws/build/veve3725_hw2/colcon_command_prefix_setup_py.sh[m
+[1mdeleted file mode 100644[m
+[1mindex 4df370f..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/colcon_command_prefix_setup_py.sh[m
+[1m+++ /dev/null[m
+[36m@@ -1,2 +0,0 @@[m
+[31m-# generated from colcon_core/shell/template/command_prefix.sh.em[m
+[31m-. "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service/share/veve3725_service/package.sh"[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/colcon_command_prefix_setup_py.sh.env b/hw/ros2_ws/build/veve3725_hw2/colcon_command_prefix_setup_py.sh.env[m
+[1mdeleted file mode 100644[m
+[1mindex 5d2944d..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/colcon_command_prefix_setup_py.sh.env[m
+[1m+++ /dev/null[m
+[36m@@ -1,67 +0,0 @@[m
+[31m-AMENT_PREFIX_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service:/opt/ros/humble[m
+[31m-CHROME_DESKTOP=code.desktop[m
+[31m-CMAKE_PREFIX_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service[m
+[31m-COLCON=1[m
+[31m-COLCON_PREFIX_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install[m
+[31m-COLORTERM=truecolor[m
+[31m-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus[m
+[31m-DESKTOP_SESSION=ubuntu[m
+[31m-DISPLAY=:0[m
+[31m-GDK_BACKEND=x11[m
+[31m-GDMSESSION=ubuntu[m
+[31m-GIT_ASKPASS=/usr/share/code/resources/app/extensions/git/dist/askpass.sh[m
+[31m-GNOME_DESKTOP_SESSION_ID=this-is-deprecated[m
+[31m-GNOME_SETUP_DISPLAY=:1[m
+[31m-GNOME_SHELL_SESSION_MODE=ubuntu[m
+[31m-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/ee475d7a_ef55_40ca_bc67_997914002ade[m
+[31m-GNOME_TERMINAL_SERVICE=:1.273[m
+[31m-GTK_MODULES=gail:atk-bridge[m
+[31m-HOME=/home/anudeep[m
+[31m-IM_CONFIG_PHASE=1[m
+[31m-LANG=en_US.UTF-8[m
+[31m-LC_ALL=en_US.UTF-8[m
+[31m-LD_LIBRARY_PATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib[m
+[31m-LESSCLOSE=/usr/bin/lesspipe %s %s[m
+[31m-LESSOPEN=| /usr/bin/lesspipe %s[m
+[31m-LOGNAME=anudeep[m
+[31m-LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:[m
+[31m-OLDPWD=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws[m
+[31m-ORIGINAL_XDG_CURRENT_DESKTOP=ubuntu:GNOME[m
+[31m-PATH=/opt/ros/humble/bin:/home/anudeep/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin[m
+[31m-PWD=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2[m
+[31m-PYTHONPATH=/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_service/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/pubsubpackage:/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/pubsubpackage/lib/python3.10/site-packages[m
+[31m-QT_ACCESSIBILITY=1[m
+[31m-QT_IM_MODULE=ibus[m
+[31m-ROS_DISTRO=humble[m
+[31m-ROS_LOCALHOST_ONLY=0[m
+[31m-ROS_PYTHON_VERSION=3[m
+[31m-ROS_VERSION=2[m
+[31m-SESSION_MANAGER=local/anudeep-VirtualBox:@/tmp/.ICE-unix/1530,unix/anudeep-VirtualBox:/tmp/.ICE-unix/1530[m
+[31m-SHELL=/bin/bash[m
+[31m-SHLVL=2[m
+[31m-SSH_AGENT_LAUNCHER=gnome-keyring[m
+[31m-SSH_AUTH_SOCK=/run/user/1000/keyring/ssh[m
+[31m-SYSTEMD_EXEC_PID=1559[m
+[31m-TERM=xterm-256color[m
+[31m-TERM_PROGRAM=vscode[m
+[31m-TERM_PROGRAM_VERSION=1.103.2[m
+[31m-USER=anudeep[m
+[31m-USERNAME=anudeep[m
+[31m-VSCODE_GIT_ASKPASS_EXTRA_ARGS=[m
+[31m-VSCODE_GIT_ASKPASS_MAIN=/usr/share/code/resources/app/extensions/git/dist/askpass-main.js[m
+[31m-VSCODE_GIT_ASKPASS_NODE=/usr/share/code/code[m
+[31m-VSCODE_GIT_IPC_HANDLE=/run/user/1000/vscode-git-d9e7b93c25.sock[m
+[31m-VTE_VERSION=6800[m
+[31m-WAYLAND_DISPLAY=wayland-0[m
+[31m-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.GC52B3[m
+[31m-XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg[m
+[31m-XDG_CURRENT_DESKTOP=Unity[m
+[31m-XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop[m
+[31m-XDG_MENU_PREFIX=gnome-[m
+[31m-XDG_RUNTIME_DIR=/run/user/1000[m
+[31m-XDG_SESSION_CLASS=user[m
+[31m-XDG_SESSION_DESKTOP=ubuntu[m
+[31m-XDG_SESSION_TYPE=wayland[m
+[31m-XMODIFIERS=@im=ibus[m
+[31m-_=/usr/bin/colcon[m
+[31m-_colcon_cd_root=/opt/ros/humble/[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/package.xml b/hw/ros2_ws/build/veve3725_hw2/package.xml[m
+[1mdeleted file mode 120000[m
+[1mindex 7e7e4c2..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/package.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/veve3725_hw2/package.xml[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/prefix_override/__pycache__/sitecustomize.cpython-310.pyc b/hw/ros2_ws/build/veve3725_hw2/prefix_override/__pycache__/sitecustomize.cpython-310.pyc[m
+[1mdeleted file mode 100644[m
+[1mindex c9dc2fb..0000000[m
+Binary files a/hw/ros2_ws/build/veve3725_hw2/prefix_override/__pycache__/sitecustomize.cpython-310.pyc and /dev/null differ
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/prefix_override/sitecustomize.py b/hw/ros2_ws/build/veve3725_hw2/prefix_override/sitecustomize.py[m
+[1mdeleted file mode 100644[m
+[1mindex 18796ea..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/prefix_override/sitecustomize.py[m
+[1m+++ /dev/null[m
+[36m@@ -1,4 +0,0 @@[m
+[31m-import sys[m
+[31m-if sys.prefix == '/usr':[m
+[31m-    sys.real_prefix = sys.prefix[m
+[31m-    sys.prefix = sys.exec_prefix = '/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/install/veve3725_hw2'[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/resource/veve3725_hw2 b/hw/ros2_ws/build/veve3725_hw2/resource/veve3725_hw2[m
+[1mdeleted file mode 120000[m
+[1mindex 855e289..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/resource/veve3725_hw2[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/veve3725_hw2/resource/veve3725_hw2[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/setup.cfg b/hw/ros2_ws/build/veve3725_hw2/setup.cfg[m
+[1mdeleted file mode 120000[m
+[1mindex 76033c1..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/setup.cfg[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/veve3725_hw2/setup.cfg[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/setup.py b/hw/ros2_ws/build/veve3725_hw2/setup.py[m
+[1mdeleted file mode 120000[m
+[1mindex 9e45fd5..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/setup.py[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/veve3725_hw2/setup.py[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.dsv b/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.dsv[m
+[1mdeleted file mode 100644[m
+[1mindex fcc4c05..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.dsv[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-prepend-non-duplicate;PYTHONPATH;/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.ps1 b/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.ps1[m
+[1mdeleted file mode 100644[m
+[1mindex f59dffd..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.ps1[m
+[1m+++ /dev/null[m
+[36m@@ -1,3 +0,0 @@[m
+[31m-# generated from colcon_powershell/shell/template/hook_prepend_value.ps1.em[m
+[31m-[m
+[31m-colcon_prepend_unique_value PYTHONPATH "$env:COLCON_CURRENT_PREFIX\/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2"[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.sh b/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.sh[m
+[1mdeleted file mode 100644[m
+[1mindex 79aaa1e..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/share/veve3725_hw2/hook/pythonpath_develop.sh[m
+[1m+++ /dev/null[m
+[36m@@ -1,3 +0,0 @@[m
+[31m-# generated from colcon_core/shell/template/hook_prepend_value.sh.em[m
+[31m-[m
+[31m-_colcon_prepend_unique_value PYTHONPATH "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_hw2"[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2 b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2[m
+[1mdeleted file mode 120000[m
+[1mindex b052880..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/veve3725_hw2/veve3725_hw2[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/PKG-INFO b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/PKG-INFO[m
+[1mdeleted file mode 100644[m
+[1mindex 0f689f6..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/PKG-INFO[m
+[1m+++ /dev/null[m
+[36m@@ -1,12 +0,0 @@[m
+[31m-Metadata-Version: 2.1[m
+[31m-Name: veve3725-hw2[m
+[31m-Version: 0.0.0[m
+[31m-Summary: Homeowrk 1 - Advanced robotics[m
+[31m-Home-page: UNKNOWN[m
+[31m-Maintainer: anudeep[m
+[31m-Maintainer-email: vedantamanudeep1@gmail.com[m
+[31m-License: Apache-2.0[m
+[31m-Platform: UNKNOWN[m
+[31m-[m
+[31m-UNKNOWN[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/SOURCES.txt b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/SOURCES.txt[m
+[1mdeleted file mode 100644[m
+[1mindex aa934be..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/SOURCES.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1,15 +0,0 @@[m
+[31m-package.xml[m
+[31m-setup.cfg[m
+[31m-setup.py[m
+[31m-resource/veve3725_hw2[m
+[31m-veve3725_hw2/__init__.py[m
+[31m-veve3725_hw2/client_function.py[m
+[31m-veve3725_hw2/latency_client_function.py[m
+[31m-veve3725_hw2/server_function.py[m
+[31m-veve3725_hw2.egg-info/PKG-INFO[m
+[31m-veve3725_hw2.egg-info/SOURCES.txt[m
+[31m-veve3725_hw2.egg-info/dependency_links.txt[m
+[31m-veve3725_hw2.egg-info/entry_points.txt[m
+[31m-veve3725_hw2.egg-info/requires.txt[m
+[31m-veve3725_hw2.egg-info/top_level.txt[m
+[31m-veve3725_hw2.egg-info/zip-safe[m
+\ No newline at end of file[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/dependency_links.txt b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/dependency_links.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 8b13789..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/dependency_links.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/entry_points.txt b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/entry_points.txt[m
+[1mdeleted file mode 100644[m
+[1mindex b90cbca..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/entry_points.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1,5 +0,0 @@[m
+[31m-[console_scripts][m
+[31m-client_function = veve3725_hw2.client_function:main[m
+[31m-latency_client_function = veve3725_hw2.latency_client_function:main[m
+[31m-server_function = veve3725_hw2.server_function:main[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/requires.txt b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/requires.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 49fe098..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/requires.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-setuptools[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/top_level.txt b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/top_level.txt[m
+[1mdeleted file mode 100644[m
+[1mindex f26d3ed..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/top_level.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-veve3725_hw2[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/zip-safe b/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/zip-safe[m
+[1mdeleted file mode 100644[m
+[1mindex 8b13789..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_hw2/veve3725_hw2.egg-info/zip-safe[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_service/.cmake/api/v1/reply/codemodel-v2-16633061e4a57ac96be8.json b/hw/ros2_ws/build/veve3725_service/.cmake/api/v1/reply/codemodel-v2-16633061e4a57ac96be8.json[m
+[1mdeleted file mode 100644[m
+[1mindex 213c806..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_service/.cmake/api/v1/reply/codemodel-v2-16633061e4a57ac96be8.json[m
+[1m+++ /dev/null[m
+[36m@@ -1,233 +0,0 @@[m
+[31m-{[m
+[31m-	"configurations" : [m
+[31m-	[[m
+[31m-		{[m
+[31m-			"directories" : [m
+[31m-			[[m
+[31m-				{[m
+[31m-					"build" : ".",[m
+[31m-					"childIndexes" : [m
+[31m-					[[m
+[31m-						1[m
+[31m-					],[m
+[31m-					"hasInstallRule" : true,[m
+[31m-					"jsonFile" : "directory-.-4357d913a23ee52ee2ef.json",[m
+[31m-					"minimumCMakeVersion" : [m
+[31m-					{[m
+[31m-						"string" : "3.12"[m
+[31m-					},[m
+[31m-					"projectIndex" : 0,[m
+[31m-					"source" : ".",[m
+[31m-					"targetIndexes" : [m
+[31m-					[[m
+[31m-						0,[m
+[31m-						1,[m
+[31m-						2,[m
+[31m-						3,[m
+[31m-						4,[m
+[31m-						6,[m
+[31m-						7,[m
+[31m-						8,[m
+[31m-						9,[m
+[31m-						10,[m
+[31m-						11,[m
+[31m-						12,[m
+[31m-						13,[m
+[31m-						14,[m
+[31m-						15,[m
+[31m-						16,[m
+[31m-						17[m
+[31m-					][m
+[31m-				},[m
+[31m-				{[m
+[31m-					"build" : "veve3725_service__py",[m
+[31m-					"jsonFile" : "directory-veve3725_service__py-82211f12b711431d7cf4.json",[m
+[31m-					"minimumCMakeVersion" : [m
+[31m-					{[m
+[31m-						"string" : "3.12"[m
+[31m-					},[m
+[31m-					"parentIndex" : 0,[m
+[31m-					"projectIndex" : 0,[m
+[31m-					"source" : "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service/veve3725_service__py",[m
+[31m-					"targetIndexes" : [m
+[31m-					[[m
+[31m-						5[m
+[31m-					][m
+[31m-				}[m
+[31m-			],[m
+[31m-			"name" : "",[m
+[31m-			"projects" : [m
+[31m-			[[m
+[31m-				{[m
+[31m-					"directoryIndexes" : [m
+[31m-					[[m
+[31m-						0,[m
+[31m-						1[m
+[31m-					],[m
+[31m-					"name" : "veve3725_service",[m
+[31m-					"targetIndexes" : [m
+[31m-					[[m
+[31m-						0,[m
+[31m-						1,[m
+[31m-						2,[m
+[31m-						3,[m
+[31m-						4,[m
+[31m-						5,[m
+[31m-						6,[m
+[31m-						7,[m
+[31m-						8,[m
+[31m-						9,[m
+[31m-						10,[m
+[31m-						11,[m
+[31m-						12,[m
+[31m-						13,[m
+[31m-						14,[m
+[31m-						15,[m
+[31m-						16,[m
+[31m-						17[m
+[31m-					][m
+[31m-				}[m
+[31m-			],[m
+[31m-			"targets" : [m
+[31m-			[[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "ament_cmake_python_build_veve3725_service_egg::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-ament_cmake_python_build_veve3725_service_egg-9d22d1aa8d388579d91f.json",[m
+[31m-					"name" : "ament_cmake_python_build_veve3725_service_egg",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "ament_cmake_python_symlink_veve3725_service::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-ament_cmake_python_symlink_veve3725_service-b4dfa04d97a6f9235e60.json",[m
+[31m-					"name" : "ament_cmake_python_symlink_veve3725_service",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "uninstall::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-uninstall-b25f64d66cbc277b0d0a.json",[m
+[31m-					"name" : "uninstall",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service-0b97a6bab22e6cf5843a.json",[m
+[31m-					"name" : "veve3725_service",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__cpp::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__cpp-8ed76492d007be545085.json",[m
+[31m-					"name" : "veve3725_service__cpp",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 1,[m
+[31m-					"id" : "veve3725_service__py::@7b6a1567c558a158be6c",[m
+[31m-					"jsonFile" : "target-veve3725_service__py-f907e9862f873dadd71a.json",[m
+[31m-					"name" : "veve3725_service__py",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_generator_c::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_generator_c-76922d1625751e29896a.json",[m
+[31m-					"name" : "veve3725_service__rosidl_generator_c",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_generator_py::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_generator_py-680039fcfbcfa28638a5.json",[m
+[31m-					"name" : "veve3725_service__rosidl_generator_py",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_c::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_c-820d80d8a28917aeabca.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_c",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_c__pyext-ee7b2317125b4446b50a.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_c__pyext",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_cpp-52d1a8e22649eb224738.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_cpp",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_fastrtps_c-34ddaddbd75f469c9e68.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_fastrtps_c",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_fastrtps_c__pyext-a6a3b5550481434da847.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_fastrtps_c__pyext",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_fastrtps_cpp-d2ff4b951aa9b6d5d608.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_fastrtps_cpp",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_introspection_c-ad1fa498545627e5621d.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_introspection_c",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_introspection_c__pyext-ee138fc4a3546db74cdf.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_introspection_c__pyext",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service__rosidl_typesupport_introspection_cpp-55b8a77b51ee826d694c.json",[m
+[31m-					"name" : "veve3725_service__rosidl_typesupport_introspection_cpp",[m
+[31m-					"projectIndex" : 0[m
+[31m-				},[m
+[31m-				{[m
+[31m-					"directoryIndex" : 0,[m
+[31m-					"id" : "veve3725_service_uninstall::@6890427a1f51a3e7e1df",[m
+[31m-					"jsonFile" : "target-veve3725_service_uninstall-2c10590101f4e4947cef.json",[m
+[31m-					"name" : "veve3725_service_uninstall",[m
+[31m-					"projectIndex" : 0[m
+[31m-				}[m
+[31m-			][m
+[31m-		}[m
+[31m-	],[m
+[31m-	"kind" : "codemodel",[m
+[31m-	"paths" : [m
+[31m-	{[m
+[31m-		"build" : "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service",[m
+[31m-		"source" : "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/src/veve3725_service"[m
+[31m-	},[m
+[31m-	"version" : [m
+[31m-	{[m
+[31m-		"major" : 2,[m
+[31m-		"minor" : 3[m
+[31m-	}[m
+[31m-}[m
+[1mdiff --git a/hw/ros2_ws/build/veve3725_service/.cmake/api/v1/reply/directory-.-4357d913a23ee52ee2ef.json b/hw/ros2_ws/build/veve3725_service/.cmake/api/v1/reply/directory-.-4357d913a23ee52ee2ef.json[m
+[1mdeleted file mode 100644[m
+[1mindex e082e89..0000000[m
+[1m--- a/hw/ros2_ws/build/veve3725_service/.cmake/api/v1/reply/directory-.-4357d913a23ee52ee2ef.json[m
+[1m+++ /dev/null[m
+[36m@@ -1,766 +0,0 @@[m
+[31m-{[m
+[31m-	"backtraceGraph" : [m
+[31m-	{[m
+[31m-		"commands" : [m
+[31m-		[[m
+[31m-			"_install",[m
+[31m-			"install",[m
+[31m-			"include",[m
+[31m-			"find_package",[m
+[31m-			"ament_cmake_symlink_install_targets",[m
+[31m-			"ament_execute_extensions",[m
+[31m-			"rosidl_generate_interfaces",[m
+[31m-			"_ament_cmake_python_install_package",[m
+[31m-			"ament_python_install_package",[m
+[31m-			"ament_package"[m
+[31m-		],[m
+[31m-		"files" : [m
+[31m-		[[m
+[31m-			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_symlink_install-extras.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake",[m
+[31m-			"CMakeLists.txt",[m
+[31m-			"/opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/cmake/rosidl_typesupport_fastrtps_cpp_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_typesupport_introspection_c/cmake/rosidl_typesupport_introspection_c_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake/rosidl_typesupport_introspection_cpp_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake",[m
+[31m-			"/opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake_export_targets/cmake/ament_cmake_export_targets_package_hook.cmake",[m
+[31m-			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake"[m
+[31m-		],[m
+[31m-		"nodes" : [m
+[31m-		[[m
+[31m-			{[m
+[31m-				"file" : 5[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 3,[m
+[31m-				"file" : 5,[m
+[31m-				"line" : 11,[m
+[31m-				"parent" : 0[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 4,[m
+[31m-				"parent" : 1[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 4,[m
+[31m-				"line" : 41,[m
+[31m-				"parent" : 2[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 3,[m
+[31m-				"parent" : 3[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 3,[m
+[31m-				"file" : 3,[m
+[31m-				"line" : 15,[m
+[31m-				"parent" : 4[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 2,[m
+[31m-				"parent" : 5[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 2,[m
+[31m-				"line" : 41,[m
+[31m-				"parent" : 6[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 1,[m
+[31m-				"parent" : 7[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 1,[m
+[31m-				"line" : 47,[m
+[31m-				"parent" : 8[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 9[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 6,[m
+[31m-				"file" : 5,[m
+[31m-				"line" : 16,[m
+[31m-				"parent" : 0[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 5,[m
+[31m-				"file" : 9,[m
+[31m-				"line" : 286,[m
+[31m-				"parent" : 11[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 7,[m
+[31m-				"parent" : 13[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 7,[m
+[31m-				"line" : 164,[m
+[31m-				"parent" : 14[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 15[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 16[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 10,[m
+[31m-				"parent" : 18[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 10,[m
+[31m-				"line" : 167,[m
+[31m-				"parent" : 19[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 20[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 21[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 11,[m
+[31m-				"parent" : 23[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 11,[m
+[31m-				"line" : 185,[m
+[31m-				"parent" : 24[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 25[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 26[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 12,[m
+[31m-				"parent" : 28[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 12,[m
+[31m-				"line" : 146,[m
+[31m-				"parent" : 29[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 30[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 31[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 13,[m
+[31m-				"parent" : 33[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 13,[m
+[31m-				"line" : 141,[m
+[31m-				"parent" : 34[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 35[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 36[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 14,[m
+[31m-				"parent" : 38[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 14,[m
+[31m-				"line" : 146,[m
+[31m-				"parent" : 39[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 40[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 41[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 15,[m
+[31m-				"parent" : 43[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 15,[m
+[31m-				"line" : 140,[m
+[31m-				"parent" : 44[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 45[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 46[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 12[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 17,[m
+[31m-				"parent" : 48[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 8,[m
+[31m-				"file" : 17,[m
+[31m-				"line" : 124,[m
+[31m-				"parent" : 49[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 7,[m
+[31m-				"file" : 16,[m
+[31m-				"line" : 39,[m
+[31m-				"parent" : 50[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 16,[m
+[31m-				"line" : 191,[m
+[31m-				"parent" : 51[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 52[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 17,[m
+[31m-				"line" : 302,[m
+[31m-				"parent" : 49[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 4,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 37,[m
+[31m-				"parent" : 54[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 6,[m
+[31m-				"line" : 50,[m
+[31m-				"parent" : 55[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 9,[m
+[31m-				"file" : 5,[m
+[31m-				"line" : 25,[m
+[31m-				"parent" : 0[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 5,[m
+[31m-				"file" : 19,[m
+[31m-				"line" : 66,[m
+[31m-				"parent" : 57[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 2,[m
+[31m-				"file" : 8,[m
+[31m-				"line" : 48,[m
+[31m-				"parent" : 58[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"file" : 18,[m
+[31m-				"parent" : 59[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 61[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 63[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 65[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 67[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 69[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 71[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 73[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 75[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 1,[m
+[31m-				"file" : 18,[m
+[31m-				"line" : 28,[m
+[31m-				"parent" : 60[m
+[31m-			},[m
+[31m-			{[m
+[31m-				"command" : 0,[m
+[31m-				"file" : 0,[m
+[31m-				"line" : 43,[m
+[31m-				"parent" : 77[m
+[31m-			}[m
+[31m-		][m
+[31m-	},[m
+[31m-	"installers" : [m
+[31m-	[[m
+[31m-		{[m
+[31m-			"backtrace" : 10,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"scriptFile" : "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake",[m
+[31m-			"type" : "script"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 17,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"libveve3725_service__rosidl_generator_c.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_generator_c::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 6,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 22,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"libveve3725_service__rosidl_typesupport_fastrtps_c.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 11,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 27,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"libveve3725_service__rosidl_typesupport_fastrtps_cpp.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 13,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 32,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"libveve3725_service__rosidl_typesupport_introspection_c.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 14,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 37,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"libveve3725_service__rosidl_typesupport_c.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_typesupport_c::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 8,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 42,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"libveve3725_service__rosidl_typesupport_introspection_cpp.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 16,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 47,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"libveve3725_service__rosidl_typesupport_cpp.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 10,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 53,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"type" : "code"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 56,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "lib",[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"rosidl_generator_py/veve3725_service/libveve3725_service__rosidl_generator_py.so"[m
+[31m-			],[m
+[31m-			"targetId" : "veve3725_service__rosidl_generator_py::@6890427a1f51a3e7e1df",[m
+[31m-			"targetIndex" : 7,[m
+[31m-			"type" : "target"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 62,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "share/veve3725_service/cmake",[m
+[31m-			"exportName" : "export_veve3725_service__rosidl_generator_c",[m
+[31m-			"exportTargets" : [m
+[31m-			[[m
+[31m-				{[m
+[31m-					"id" : "veve3725_service__rosidl_generator_c::@6890427a1f51a3e7e1df",[m
+[31m-					"index" : 6[m
+[31m-				}[m
+[31m-			],[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"CMakeFiles/Export/share/veve3725_service/cmake/export_veve3725_service__rosidl_generator_cExport.cmake"[m
+[31m-			],[m
+[31m-			"type" : "export"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 64,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "share/veve3725_service/cmake",[m
+[31m-			"exportName" : "export_veve3725_service__rosidl_typesupport_fastrtps_c",[m
+[31m-			"exportTargets" : [m
+[31m-			[[m
+[31m-				{[m
+[31m-					"id" : "veve3725_service__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",[m
+[31m-					"index" : 11[m
+[31m-				}[m
+[31m-			],[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"CMakeFiles/Export/share/veve3725_service/cmake/export_veve3725_service__rosidl_typesupport_fastrtps_cExport.cmake"[m
+[31m-			],[m
+[31m-			"type" : "export"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 66,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "share/veve3725_service/cmake",[m
+[31m-			"exportName" : "export_veve3725_service__rosidl_generator_cpp",[m
+[31m-			"exportTargets" : [m
+[31m-			[[m
+[31m-				{[m
+[31m-					"id" : "veve3725_service__rosidl_generator_cpp::@6890427a1f51a3e7e1df",[m
+[31m-					"index" : 0[m
+[31m-				}[m
+[31m-			],[m
+[31m-			"paths" : [m
+[31m-			[[m
+[31m-				"CMakeFiles/Export/share/veve3725_service/cmake/export_veve3725_service__rosidl_generator_cppExport.cmake"[m
+[31m-			],[m
+[31m-			"type" : "export"[m
+[31m-		},[m
+[31m-		{[m
+[31m-			"backtrace" : 68,[m
+[31m-			"component" : "Unspecified",[m
+[31m-			"destination" : "share/veve3725_service/cmake",[m
+[31m-			"exportName" : "export_veve3725_service__rosidl_typesupport_fastrtps_cpp",[m
+[31m-			"exportTargets" : [m
+[31m-			[[m
+[31m-				{[m
+[31m-		

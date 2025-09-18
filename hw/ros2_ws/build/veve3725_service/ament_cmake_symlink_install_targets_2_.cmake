@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/anudeep/Desktop/git/Robotics-work/hw/ros2_ws/build/veve3725_service/rosidl_generator_py/veve3725_service/veve3725_service_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "veve3725_service__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/veve3725_service")
