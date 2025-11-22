@@ -70,35 +70,35 @@ class BayesFilter:
         if action != 0:
             return
 
-        # For forward motion we create a new empty belief array
+        
         new_belief = np.zeros_like(self.belief)
         rows, cols = self.grid_size
 
-        # 4 possible headings: right, up, left, down
+        
         moves = [(0, 1), (-1, 0), (0, -1), (1, 0)]
-        heading_prob = 1.0 / 4.0  # assume all headings equally likely
+        heading_prob = 1.0 / 4.0  
 
-        p_success = 1.0 - self.motion_noise  # move succeeds
-        p_fail = self.motion_noise           # move fails → stay in place
+        p_success = 1.0 - self.motion_noise  
+        p_fail = self.motion_noise         
 
-        # Loop over all cells in the grid
+        
         for i in range(rows):
             for j in range(cols):
                 p_ij = self.belief[i, j]
 
-                # Skip cells that currently have no probability mass
+                
                 if p_ij == 0.0:
                     continue
 
-                # For this cell, consider all 4 possible headings
+                
                 for heading in range(4):
                     p_heading = p_ij * heading_prob
                     di, dj = moves[heading]
 
-                    # Candidate next cell
+                    
                     ni, nj = i + di, j + dj
 
-                    # Check if the move is inside the grid and not an obstacle
+                    
                     valid = (
                         0 <= ni < rows and
                         0 <= nj < cols and
@@ -106,20 +106,19 @@ class BayesFilter:
                     )
 
                     if valid:
-                        # With success we move into (ni, nj)
+                        
                         new_belief[ni, nj] += p_heading * p_success
-                        # With failure we stay at (i, j)
+                        
                         new_belief[i, j] += p_heading * p_fail
                     else:
-                        # If we can't move (wall/out of bounds), we stay in place
+                        
                         new_belief[i, j] += p_heading
 
-        # Normalize the new belief so all entries sum to 1
+        
         total = np.sum(new_belief)
         if total > 0.0:
             new_belief /= total
 
-        # Replace old belief with the new one
         self.belief = new_belief
 
     def update(self, readings: np.ndarray):
@@ -163,47 +162,47 @@ class BayesFilter:
         # raise NotImplementedError("TODO: Implement the Bayes Filter update step")
         rows, cols = self.grid_size
 
-        # Likelihood for each cell (how well this cell explains the readings)
+        
         likelihood = np.zeros_like(self.belief)
 
-        # Loop over all cells
+     
         for i in range(rows):
             for j in range(cols):
 
-                # Ignore obstacle cells (grid==1)
+               
                 if self.env.grid[i, j] == 1:
                     continue
 
                 cell_likelihood = 0.0
 
-                # Again, assume 4 possible headings, all equally likely
+                
                 for heading in range(4):
                     expected = self._get_expected_readings((i, j), heading)
 
-                    # Start with likelihood 1 and multiply for each beam
+                    
                     beam_likelihood = 1.0
 
-                    for k in range(len(readings)):
-                        diff = abs(expected[k] - readings[k])
+                    for b in range(len(readings)):
+                        diff = abs(expected[b] - readings[b])
 
                         if diff <= self.measurement_tolerance:
-                            # Reading matches expectation reasonably well
+                            
                             beam_likelihood *= (1.0 - self.measurement_noise)
                         else:
-                            # Reading is off – lower probability
+                            
                             beam_likelihood *= (
                                 self.measurement_noise * (1.0 / (1.0 + diff))
                             )
 
-                    # Average over headings (each heading has probability 0.25)
+                    
                     cell_likelihood += 0.25 * beam_likelihood
 
                 likelihood[i, j] = cell_likelihood
 
-        # Multiply prior belief by likelihood to get unnormalized posterior
+        
         self.belief *= likelihood
 
-        # Normalize again so belief sums to 1
+       
         total = np.sum(self.belief)
         if total > 0.0:
             self.belief /= total
